@@ -1037,26 +1037,26 @@
 
 //Exercise 52
 
-let imgElem = document.getElementById('lamp')
-let btnElem = document.getElementById('btn')
+// let imgElem = document.getElementById('lamp')
+// let btnElem = document.getElementById('btn')
 
-let bulbFlag = false
+// let bulbFlag = false
 
-function onOff() {
+// function onOff() {
 
-  if (bulbFlag) {
-    imgElem.setAttribute('src', "pics/bulboff.gif")
-    btnElem.innerHTML = 'Turn On'
-    bulbFlag = false
-  } else {
-    imgElem.setAttribute('src', "pics/bulbon.gif")
-    btnElem.innerHTML = 'Turn Off'
+//   if (bulbFlag) {
+//     imgElem.setAttribute('src', "pics/bulboff.gif")
+//     btnElem.innerHTML = 'Turn On'
+//     bulbFlag = false
+//   } else {
+//     imgElem.setAttribute('src', "pics/bulbon.gif")
+//     btnElem.innerHTML = 'Turn Off'
 
-    bulbFlag = true
-  }
+//     bulbFlag = true
+//   }
 
-  console.log(bulbFlag)
-}
+//   console.log(bulbFlag)
+// }
 
 
 ////////////////////////////////////////////////////////////////
@@ -1083,49 +1083,49 @@ function onOff() {
 
 //Exercise 54
 
-let usernameInput = document.querySelector('.username')
-let passwordInput = document.querySelector('.password')
+// let usernameInput = document.querySelector('.username')
+// let passwordInput = document.querySelector('.password')
 
-let usernameMessage = document.querySelector('.username-validation')
-let passwordMessage = document.querySelector('.password-validation')
+// let usernameMessage = document.querySelector('.username-validation')
+// let passwordMessage = document.querySelector('.password-validation')
 
-function usernameValidation() {
+// function usernameValidation() {
 
-  console.log(usernameInput.value)
+//   console.log(usernameInput.value)
 
-  if (usernameInput.value.length < 12) {
-    usernameMessage.style.display = 'block'
-    usernameMessage.innerHTML = 'Must Contain 12 Character (Min)'
-    usernameMessage.style.color = 'red'
-  } else {
-    usernameMessage.innerHTML = 'okeye'
-    usernameMessage.style.color = 'green'
-  }
+//   if (usernameInput.value.length < 12) {
+//     usernameMessage.style.display = 'block'
+//     usernameMessage.innerHTML = 'Must Contain 12 Character (Min)'
+//     usernameMessage.style.color = 'red'
+//   } else {
+//     usernameMessage.innerHTML = 'okeye'
+//     usernameMessage.style.color = 'green'
+//   }
 
-}
-function passwordValidation() {
-  if (passwordInput.value.length < 8) {
-    passwordMessage.style.display = 'block'
-    passwordMessage.innerHTML = 'Must Contain 8 Character (Min)'
-    passwordMessage.style.color = 'red'
-  } else {
-    passwordMessage.innerHTML = 'okeye'
-    passwordMessage.style.color = 'green'
-  }
-}
+// }
+// function passwordValidation() {
+//   if (passwordInput.value.length < 8) {
+//     passwordMessage.style.display = 'block'
+//     passwordMessage.innerHTML = 'Must Contain 8 Character (Min)'
+//     passwordMessage.style.color = 'red'
+//   } else {
+//     passwordMessage.innerHTML = 'okeye'
+//     passwordMessage.style.color = 'green'
+//   }
+// }
 
-function Welcome() {
-  alert(`Welcome, ${usernameInput.value} !`);
-}
+// function Welcome() {
+//   alert(`Welcome, ${usernameInput.value} !`);
+// }
 
 
-let pElem = document.getElementById('change')
+// let pElem = document.getElementById('change')
 
-pElem.addEventListener('dblclick', change)
+// pElem.addEventListener('dblclick', change)
 
-function change() {
-  pElem.innerHTML = prompt('change to ?')
-}
+// function change() {
+//   pElem.innerHTML = prompt('change to ?')
+// }
 
 
 ////////////////////////////////////////////////////////////////
@@ -1145,36 +1145,36 @@ function change() {
 
 //Exercise 56
 
-let countrySelect = document.querySelector('.countrySelect')
-let citySelect = document.querySelector('.citySelect')
+// let countrySelect = document.querySelector('.countrySelect')
+// let citySelect = document.querySelector('.citySelect')
 
 
-let cityCountry = {
-  Iran: ['Tehran', 'Tabriz', 'Kerman', 'Kish'],
-  Canada: ['Torento', 'Vancover', 'Quebec'],
-  Usa: ['Los angles', 'Texas', 'New yourk', 'Boston']
-}
+// let cityCountry = {
+//   Iran: ['Tehran', 'Tabriz', 'Kerman', 'Kish'],
+//   Canada: ['Torento', 'Vancover', 'Quebec'],
+//   Usa: ['Los angles', 'Texas', 'New yourk', 'Boston']
+// }
 
-countrySelect.addEventListener('change', countrySelectFunction)
+// countrySelect.addEventListener('change', countrySelectFunction)
 
-function countrySelectFunction(e) {
+// function countrySelectFunction(e) {
 
-  let target = e.target.value
+//   let target = e.target.value
 
-  citySelect.disabled = false;
+//   citySelect.disabled = false;
 
-  citySelect.innerHTML = "";
+//   citySelect.innerHTML = "";
 
-  cityCountry[target].forEach(city => {
+//   cityCountry[target].forEach(city => {
 
-    let option = document.createElement('option')
-    option.value = city
-    option.textContent = city
-    citySelect.appendChild(option)
+//     let option = document.createElement('option')
+//     option.value = city
+//     option.textContent = city
+//     citySelect.appendChild(option)
 
-  });
+//   });
 
-}
+// }
 
 
 ////////////////////////////////////////////////////////////////
@@ -1197,7 +1197,7 @@ document.body.addEventListener('keydown', function (e) {
   }
 })
 document.body.addEventListener('click', function () {
-    menu.style.display = 'none'
+  menu.style.display = 'none'
 })
 
 ////////////////////////////////////////////////////////////////
@@ -1205,8 +1205,8 @@ document.body.addEventListener('click', function () {
 //Exercise 58
 const loader = document.querySelector('.loader')
 
- window.addEventListener('DOMContentLoaded' , function () {
-  
+window.addEventListener('DOMContentLoaded', function () {
+
   loader.classList.add('hidden')
 
 })

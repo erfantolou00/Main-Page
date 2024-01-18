@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>loginPage</title>
+</head>
+
+<body>
+
+    <div class="login-page">
+        <div class="form">
+            <input type="text" placeholder="username" class="username" onkeydown="usernameValidation()" />
+            <span class="username-validation">Must Contain 12 Character (Min)</span>
+            <input type="password" placeholder="password" class="password" onkeydown="passwordValidation()" />
+            <span class="password-validation">Must Contain 8 Character (Min)</span>
+            <button onclick="Welcome()">login</button>
+            <p class="message">Not registered? <a>Create an account</a></p>
+        </div>
+    </div>
+
+    <script type=' text/javascript' src='js/app.js'></script>
+</body>
+
+</html>
