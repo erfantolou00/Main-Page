@@ -1,0 +1,9 @@
+body {
+  background: gray;
+  font-family: sans-serif;
+}
+
+.lamp {
+  display: flex;
+  justify-content: center;
+}
